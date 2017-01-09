@@ -36,7 +36,7 @@ test.serial('Should correctly give number of Posts', async t => {
 test.serial('Should send correct data when queried against a cuid', async t => {
   t.plan(2);
 
-  const post = new Post({ name: 'Foo', title: 'bar', slug: 'bar', cuid: 'f34gb2bh24b24b2', content: 'Hello Mern says Foo' });
+  const post = new Post({ name: 'Foo', title: 'bar', blueprint: 'blueprint_test', slug: 'bar', cuid: 'f34gb2bh24b24b2', content: 'Hello Mern says Foo' });
   post.save();
 
   const res = await request(app)

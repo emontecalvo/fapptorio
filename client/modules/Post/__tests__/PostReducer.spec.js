@@ -9,6 +9,7 @@ test('action for ADD_POST is working', reducerTest(
   addPost({
     name: 'prank',
     title: 'first post',
+    blueprint: 'blueprint',
     content: 'Hello world!',
     _id: null,
     cuid: null,
@@ -17,6 +18,7 @@ test('action for ADD_POST is working', reducerTest(
   { data: [{
     name: 'prank',
     title: 'first post',
+    blueprint: 'blueprint'
     content: 'Hello world!',
     _id: null,
     cuid: null,
@@ -29,6 +31,7 @@ test('action for DELETE_POST is working', reducerTest(
   { data: [{
     name: 'prank',
     title: 'first post',
+    blueprint: 'blueprint',
     content: 'Hello world!',
     cuid: 'abc',
     _id: 1,
@@ -45,6 +48,7 @@ test('action for ADD_POSTS is working', reducerTest(
     {
       name: 'prank',
       title: 'first post',
+      blueprint: 'blueprint',
       content: 'Hello world!',
       _id: null,
       cuid: null,
@@ -54,6 +58,7 @@ test('action for ADD_POSTS is working', reducerTest(
   { data: [{
     name: 'prank',
     title: 'first post',
+    blueprint: 'blueprint',
     content: 'Hello world!',
     _id: null,
     cuid: null,

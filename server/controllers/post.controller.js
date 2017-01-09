@@ -25,7 +25,7 @@ export function getPosts(req, res) {
  * @returns void
  */
 export function addPost(req, res) {
-  if (!req.body.post.name || !req.body.post.title || !req.body.post.content) {
+  if (!req.body.post.name || !req.body.post.title || !req.body.post.content || !req.body.post.blueprint) {
     res.status(403).end();
   }
 
@@ -34,6 +34,7 @@ export function addPost(req, res) {
   // Let's sanitize inputs
   newPost.title = sanitizeHtml(newPost.title);
   newPost.name = sanitizeHtml(newPost.name);
+  newPost.blueprint = sanitizeHtml(newPost.blueprint);
   newPost.content = sanitizeHtml(newPost.content);
 
   newPost.slug = slug(newPost.title.toLowerCase(), { lowercase: true });

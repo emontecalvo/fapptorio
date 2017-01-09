@@ -10,6 +10,7 @@ export default {
     createNewPost: 'Create new post',
     authorName: 'Author\'s Name',
     postTitle: 'Post Title',
+    blueprint: 'blueprint',
     postContent: 'Post Content',
     submit: 'Submit',
     comment: `user {name} {value, plural,

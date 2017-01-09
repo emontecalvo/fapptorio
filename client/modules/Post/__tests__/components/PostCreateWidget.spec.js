@@ -48,6 +48,7 @@ test('calls addPost', t => {
 
   wrapper.ref('name').get(0).value = 'David';
   wrapper.ref('title').get(0).value = 'Some Title';
+  wrapper.ref('blueprint').get(0).value = 'Some bp';
   wrapper.ref('content').get(0).value = 'Bla Bla Bla';
 
   wrapper.find('a').first().simulate('click');

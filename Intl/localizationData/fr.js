@@ -10,6 +10,7 @@ export default {
     createNewPost: 'Créer un nouveau message',
     authorName: 'Nom de l\'auteur',
     postTitle: 'Titre de l\'article',
+    blueprint: 'blueprint',
     postContent: 'Contenu après',
     submit: 'Soumettre',
     comment: `user {name} {value, plural,
